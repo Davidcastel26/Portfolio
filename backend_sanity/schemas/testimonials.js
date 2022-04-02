@@ -25,6 +25,16 @@ export default{
       name:'feedback',
       title:'Feedback',
       type: 'string'
+    },
+    {
+      name:'github',
+      title:'GitHub',
+      type: 'string'
+    },
+    {
+      name:'linkedin',
+      title:'Linkedin',
+      type: 'string'
     }
   ]
 }
