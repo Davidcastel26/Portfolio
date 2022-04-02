@@ -35,6 +35,7 @@ const Navbar = () => {
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
+            <ul>
             {["home", "about", "contact", "work", "skills", "testimonials"].map(
               (item) => (
                 <li key={item}>
@@ -44,6 +45,7 @@ const Navbar = () => {
                 </li>
               )
             )}
+            </ul>
           </motion.div>
         )}
       </div>
