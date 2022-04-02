@@ -4,7 +4,11 @@ import './Navbar.scss'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav>
+      <div>
+        <img src={images.log} alt="logo here" />
+      </div>
+    </nav>
   )
 }
 
