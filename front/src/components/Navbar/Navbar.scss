@@ -1,4 +1,4 @@
-.app__navbar{
+.app__navbar {
   width: 100%;
 
   display: flex;
@@ -6,19 +6,19 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  background: rgba(255,255,255, 0.25);
-  backdrop-filter: blur(4px );
-  -webkit-backdrop-filter: blur(4px );
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  position:fixed;
+  position: fixed;
 }
 
-.app__navbar-logo{
+.app__navbar-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
-  img{
+  img {
     width: 90px;
     height: 20px;
 
@@ -29,7 +29,7 @@
   }
 }
 
-.app__navbar-links{
+.app__navbar-links {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -37,13 +37,13 @@
 
   list-style: none;
 
-  li{
-    margin:  0 1rem;
+  li {
+    margin: 0 1rem;
     cursor: pointer;
 
     flex-direction: column;
 
-    div{
+    div {
       width: 5px;
       height: 5px;
       background: transparent;
@@ -53,25 +53,79 @@
       margin-bottom: 5px;
     }
 
-    a{
+    a {
       color: var(--gray-color);
       text-decoration: none;
       flex-direction: column;
 
-      text-transform: uppercase ;
+      text-transform: uppercase;
       font-weight: 500;
 
       transition: all 0.3s ease-in-out;
-      
-      &:hover{
-        color:var(--secondary-color)
+
+      &:hover {
+        color: var(--secondary-color)
       }
     }
 
-    &:hover{
-        div{
-          background: var(--secondary-color);
-        }
+    &:hover {
+      div {
+        background: var(--secondary-color);
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+
+  svg {
+    width: 70%;
+    height: 70%;
+    color: var(--white-color);
+  }
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 1rem;
+
+    width: 80%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    background: url('../../assets/bgWhite.png');
+    background-color: var(--white-color);
+    background-size: cover;
+    background-repeat: repeat;
+
+    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+
+    svg {
+      width: 70%;
+      height: 70%;
+      color: var(--white-color);
     }
   }
 }
