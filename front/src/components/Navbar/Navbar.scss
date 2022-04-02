@@ -81,6 +81,9 @@
 
 }
 
+
+// MENU BTN IS HERE!! ----------------------------------
+
 .app__navbar-menu {
   width: 35px;
   height: 35px;
@@ -129,7 +132,7 @@
       margin: 0.5rem 1rem;
     }
 
-    ul{
+    ul {
       list-style: none;
       margin: 0;
       padding: 0;
@@ -141,14 +144,33 @@
       align-items: flex-start;
       flex-direction: column;
 
-      li{
+      li {
         margin: 1rem;
 
-        a{
-          color: var(--white-color);
-        }
+        a {
+          color: var(--gray-color);
+          text-decoration: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
 
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--secondary-color)
+          }
+        }
       }
     }
+
+    @media screen and (min-width: 900px){
+      display: none;
+    }
+
   }
+
+  @media screen and (min-width: 900px){
+    display: none;
+  }
+
 }
