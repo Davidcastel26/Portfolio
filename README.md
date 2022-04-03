@@ -7,4 +7,6 @@
 
     https://youtu.be/3HNyXCPDQ7Q
 
+to get info about the project run
+1) sanity manage
 
