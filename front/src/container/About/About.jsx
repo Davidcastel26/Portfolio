@@ -59,6 +59,9 @@ const About = () => {
            key={about.title + index}  
           >
             <img src={ urlFor(about.imgUrl) } alt={about.title} />
+            {
+              console.log(`${urlFor(about.imgUrl)} + ABOUT `)
+            }
             <h2 className="bold-text" style={{marginTop: 20}}> {about.title} </h2>
             <h2 className="p-text" style={{marginTop: 10}}> {about.description} </h2>
           </motion.div>

@@ -5,9 +5,9 @@ import './Work.scss';
 import { AiFillEye, AiFillGithub} from 'react-icons/ai';
 import { motion } from 'framer-motion';
 // components 
-import {AppWrop} from '../../wrapper'
+import {AppWrap} from '../../wrapper'
 // back sanity
-import { urlFor, client} from '../../client'
+import { urlFor, client } from "../../client";
 
 const Work = () => {
 
@@ -52,9 +52,20 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => {
+         
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <motion.div
+                whileHover={{opacity: [0, 1]}}
+                transition={{duration:0.25, ease:'easeInOut', staggerChildren: 0.5}}
+                className="app__work-hover app__flex"
+              >
+                <a href={work.projectLink} alt='projectLink' target="_blank" rel='noreferrer'></a>
+              </motion.div>
+             {/* {
+              console.log(` ${urlFor(work.imgUrl)} + WORK`)
+             } */}
             </div>
           </div>
         })}
