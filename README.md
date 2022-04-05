@@ -10,3 +10,6 @@
 to get info about the project run
 1) sanity manage
 
+to run sanity proyect
+
+2) sanity start
