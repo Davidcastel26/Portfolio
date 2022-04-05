@@ -20,7 +20,7 @@ const scaleVariants = {
 }
 
 const Header = () => (
-  <div id='home' className='app__header app__flex'>
+  <div className='app__header app__flex'>
     {/* check hte animition for the name is right here title and subtitles  */}
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -77,4 +77,4 @@ const Header = () => (
   </div>
 )
 
-export default Header
+export default AppWrap(Header, 'home');
