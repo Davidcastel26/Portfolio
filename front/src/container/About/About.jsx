@@ -4,26 +4,39 @@ import React, { useEffect, useState } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
+// client back
+import { urlFrom, client } from "../../client";
 
-const abouts = [
-  {
-    title: "Web Development",
-    description: "I am a good web developer.",
-    imgUrl: images.about01,
-  },
-  {
-    title: "Frontend",
-    description: "Deliver the better face for a product.",
-    imgUrl: images.about02,
-  },
-  {
-    title: "Backend",
-    description: "Provide the best logic for the services & business.",
-    imgUrl: images.about03,
-  },
-];
+// const abouts = [
+//   {
+//     title: "Web Development",
+//     description: "I am a good web developer.",
+//     imgUrl: images.about01,
+//   },
+//   {
+//     title: "Frontend",
+//     description: "Deliver the better face for a product.",
+//     imgUrl: images.about02,
+//   },
+//   {
+//     title: "Backend",
+//     description: "Provide the best logic for the services & business.",
+//     imgUrl: images.about03,
+//   },
+// ];
 
 const About = () => {
+
+  const [abouts, setAbouts] = useState([])
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query)
+      .then((data) => { setAbouts(data)})
+
+  },[])
+
   return (
     <>
       <h2 className="head-text">
