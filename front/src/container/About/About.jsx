@@ -5,7 +5,7 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 // client back
-import { urlFrom, client } from "../../client";
+import { urlFor, client } from "../../client";
 
 // const abouts = [
 //   {
@@ -56,7 +56,7 @@ const About = () => {
            className="app__profile-item"
            key={about.title + index}  
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={ urlFor(about.imgUrl) } alt={about.title} />
             <h2 className="bold-text" style={{marginTop: 20}}> {about.title} </h2>
             <h2 className="p-text" style={{marginTop: 10}}> {about.description} </h2>
           </motion.div>
