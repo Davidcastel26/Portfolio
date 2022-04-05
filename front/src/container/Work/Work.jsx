@@ -23,7 +23,7 @@ const Work = () => {
 
     client.fetch(query)
       .then((data)=>{
-        setWorks(data);
+        setWorks(data)
         setFilterWork(data)
       })
   },[])
@@ -51,7 +51,7 @@ const Work = () => {
         transition={{duration: 0.5, delayChildren: 0.5}}
         className="app__work-portfolio"
       >
-        {filterWork.map((work, index) => {
+        {works.map((work, index)=>(
          
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
@@ -63,12 +63,12 @@ const Work = () => {
               >
                 <a href={work.projectLink} alt='projectLink' target="_blank" rel='noreferrer'></a>
               </motion.div>
-             {/* {
+             {
               console.log(` ${urlFor(work.imgUrl)} + WORK`)
-             } */}
+             }
             </div>
           </div>
-        })}
+        ))}
       </motion.div>
     </>
   )
