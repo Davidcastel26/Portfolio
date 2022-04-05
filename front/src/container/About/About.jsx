@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 // styles
 import "./About.scss";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
+// import { images } from "../../constants";
 // client back
 import { urlFor, client } from "../../client";
+// componentes
+import { AppWrap } from "../../wrapper"; 
 
 // const abouts = [
 //   {
@@ -67,4 +69,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, 'about');
