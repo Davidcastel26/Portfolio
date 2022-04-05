@@ -4,6 +4,8 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import './Header.scss';
 import { images } from '../../constants';
+//components
+import {AppWrap} from '../../wrapper'
 
 
 const scaleVariants = {
