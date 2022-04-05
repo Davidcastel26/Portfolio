@@ -12,4 +12,4 @@ to get info about the project run
 
 to run sanity proyect
 
-2) sanity start
+1) sanity start
