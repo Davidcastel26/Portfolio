@@ -60,6 +60,7 @@ const Skills = () => {
                 key={work.name}
               >
                 <h4 className="bold-text">{work.name}</h4>
+                <p className="p-text">{work.company}</p>
               </motion.div>
             </>
           ))}
