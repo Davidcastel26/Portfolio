@@ -32,16 +32,18 @@ const Testimonials = () => {
       })   
   })
 
+  const test = testimonials[currentIndex];
+
   return (
     <>
       {
         testimonials.length && (
           <>
             <div className="app__testimonials-item app__flex">
-              <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials} />
+              <img src={urlFor(test.imagesurl)} alt={testimonials} />
               <div className="app__testimonial-content">
                 <p className="p-text">
-                  {testimonials[currentIndex].feedback}
+                  {test.feedback}
                 </p>
               </div>
             </div>
