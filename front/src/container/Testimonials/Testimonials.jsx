@@ -33,8 +33,29 @@ const Testimonials = () => {
   })
 
   return (
-    <div></div>
+    <>
+      {
+        testimonials.length && (
+          <>
+            <div className="app__testimonials-item app__flex">
+              <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials} />
+              <div className="app__testimonial-content">
+                <p className="p-text">
+                  {testimonials[currentIndex].feedback}
+                </p>
+              </div>
+            </div>
+          </>
+        )
+      }
+    </>
   )
 }
 
-export default Testimonials
+// export default Testimonials
+
+export default AppWrap(
+  MotionWrap(Testimonials, "app__testimonials"),
+  "testimonials",
+  "app__primarybg"  
+);
