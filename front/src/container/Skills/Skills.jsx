@@ -12,9 +12,9 @@ import { urlFor, client } from "../../client";
 
 const Skills = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      <p>Hello</p>
+    </>
   )
 }
 
