@@ -52,6 +52,9 @@ const Skills = () => {
             ))
           }
         </motion.div>
+        <motion.div className="app__skills-exp">
+
+        </motion.div>
       </div>
     </>
   )
