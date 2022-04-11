@@ -1,3 +1,27 @@
+.app__testimonials{
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__testimonials-item{
+  width: 60%;
+  min-height: 320px;
+  background-color: var(--white-color);
+  display: flex;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1) ;
+
+  transition: all 0.3s ease-in-out;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 .app__testimonials-brands{
   width: 80%;
   flex-wrap: wrap;
@@ -11,7 +35,7 @@
       width: 100%;
       height: auto;
       object-fit: cover;
-      filter: grayscale();
+      filter: grayscale(1);
     }
 
     &:hover{
