@@ -30,6 +30,10 @@ const Footer = () => {
         <div className="app__flex">
           <input type="email" className="p-text" placeholder='Your Email' name='email' value={email} onChange={handlChangeInput}/>
         </div>
+        <div>
+          <textarea className='p-text' placeholder='Your Message' value={message} name={message} onChange={handleChangeInput} id="" cols="30" rows="10" />
+        </div>
+        <button className="p-text" type='button' onClick={handleSubmit}>Send </button>
       </div>
     </>
   )
