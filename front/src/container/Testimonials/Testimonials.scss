@@ -16,14 +16,14 @@
   transition: all 0.3s ease-in-out;
 
   img{
-    width: 61%;
-    height: 95%;
+    width: 62%;
+    height: 85%;
     padding-right: 1rem;
     border-radius: 50%;
     object-fit: cover;
   }
 
-  @media screen and (min-width: 200ppx) {
+  @media screen and (min-width: 2000px) {
     min-height: 450px;
 
     img{
@@ -34,6 +34,12 @@
 
   @media screen and (max-width: 850px) {
     width: 100%;
+
+    img{
+      width: 48%;
+      height: 68%;
+      // margin-bottom: 1rem;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -46,6 +52,8 @@
     }
   }
 }
+
+
 
 .app__testimonial-content{
 
