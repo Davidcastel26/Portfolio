@@ -42,10 +42,33 @@
     img{
       width: 61%;
       height: 68%;
+      // margin-bottom: 1rem;
     }
   }
 }
 
+.app__testimonial-content{
+
+  padding-top: 1rem;
+
+  p{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: var(--black-color);
+    font-family: var(--font-base)
+  }
+  h4{
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+
+  h5{
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-top: 5px;
+  }
+}
 
 .app__testimonials-brands{
   width: 80%;
