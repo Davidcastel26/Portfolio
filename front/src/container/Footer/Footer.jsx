@@ -9,6 +9,11 @@ import { client } from '../../client'
 
 
 const Footer = () => {
+
+  const [fromData, setFromData] = useState({name:'', email:'', message:''});
+  const [isFormSubmitted, setsetIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false)
+
   return (
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
