@@ -23,12 +23,12 @@
     object-fit: cover;
   }
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 1300px) {
     min-height: 450px;
 
     img{
-      width: 150px;
-      height: 150px;
+      width: 34%;
+    height: 64%;
     }
   }
 

@@ -24,8 +24,11 @@ const Footer = () => {
       </div>
 
       <div className="app__footer-form app__flex">
+      <div className="app__flex">
+          <input type="text" className="p-text" placeholder='Your Name' name='name' value={name} onChange={handlChangeInput}/>
+        </div>
         <div className="app__flex">
-          <input type="text" className="p-text" placeholder='Your Name' />
+          <input type="email" className="p-text" placeholder='Your Email' name='email' value={email} onChange={handlChangeInput}/>
         </div>
       </div>
     </>
