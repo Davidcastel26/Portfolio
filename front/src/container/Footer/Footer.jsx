@@ -11,7 +11,7 @@ import { client } from '../../client'
 const Footer = () => {
 
   const [fromData, setFromData] = useState({name:'', email:'', message:''});
-  const [isFormSubmitted, setsetIsFormSubmitted] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false)
 
   const { name, email, message } = fromData;
@@ -24,6 +24,19 @@ const Footer = () => {
 
   const handleSubmit = () => {
     setLoading(true)
+
+    const contact = {
+      _type: 'contact',
+      name: name,
+      email: email,
+      message: message
+    }
+
+    client.create(contact)
+      .then(() => {
+        setLoading(false)
+        setIsFormSubmitted(true)
+      })
   }
 
   return (
