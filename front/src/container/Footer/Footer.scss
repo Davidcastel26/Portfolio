@@ -46,5 +46,17 @@
     &:hover{
       box-shadow: 0 0 25px #fef4f5;
     }
+
+    @media screen and(max-width: 450px) {
+      width:100%;
+    }
   }
+
+  @media screen and(max-width: 798px) {
+    width:100%;
+  }
+}
+
+.app__footer-card .app__footer-card:last-child{
+  background-color: #f2f7fb;
 }
