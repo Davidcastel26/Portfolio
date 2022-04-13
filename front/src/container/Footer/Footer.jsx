@@ -50,7 +50,7 @@ const Footer = () => {
             davcastellanoslarios@gmail.com
           </a>
         </div>
-        <div>
+        <div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
           <a href="tel: +502 3743 1717" className="p-text">
             +502 3743 1717
