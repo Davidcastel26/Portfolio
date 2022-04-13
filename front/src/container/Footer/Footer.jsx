@@ -14,6 +14,18 @@ const Footer = () => {
   const [isFormSubmitted, setsetIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false)
 
+  const { name, email, message } = fromData;
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+
+    setFromData({...fromData, [name]: value})
+  }
+
+  const handleSubmit = () => {
+    setLoading(true)
+  }
+
   return (
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
@@ -30,10 +42,10 @@ const Footer = () => {
 
       <div className="app__footer-form app__flex">
       <div className="app__flex">
-          <input type="text" className="p-text" placeholder='Your Name' name='name' value={name} onChange={handlChangeInput}/>
+          <input type="text" className="p-text" placeholder='Your Name' name='name' value={name} onChange={handleChangeInput}/>
         </div>
         <div className="app__flex">
-          <input type="email" className="p-text" placeholder='Your Email' name='email' value={email} onChange={handlChangeInput}/>
+          <input type="email" className="p-text" placeholder='Your Email' name='email' value={email} onChange={handleChangeInput}/>
         </div>
         <div>
           <textarea className='p-text' placeholder='Your Message' value={message} name={message} onChange={handleChangeInput} id="" cols="30" rows="10" />
