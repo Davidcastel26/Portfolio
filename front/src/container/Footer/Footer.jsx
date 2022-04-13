@@ -38,7 +38,7 @@ const Footer = () => {
         <div>
           <textarea className='p-text' placeholder='Your Message' value={message} name={message} onChange={handleChangeInput} id="" cols="30" rows="10" />
         </div>
-        <button className="p-text" type='button' onClick={handleSubmit}>Send </button>
+        <button className="p-text" type='button' onClick={handleSubmit}>{ loading ? 'Sending' : 'Send Message'} </button>
       </div>
     </>
   )
