@@ -58,6 +58,7 @@ const Footer = () => {
         </div>
       </div>
 
+  { !isFormSubmitted ?
       <div className="app__footer-form app__flex">
         <div className="app__flex">
           <input
@@ -92,6 +93,12 @@ const Footer = () => {
           {loading ? "Sending" : "Send Message"}{" "}
         </button>
       </div>
+    :
+      <div>
+        <h3 className="head-text">Thank you for getting in touch</h3>
+      </div>
+    }
+
     </>
   );
 };
