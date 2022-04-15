@@ -60,3 +60,20 @@
 .app__footer-card .app__footer-card:last-child{
   background-color: #f2f7fb;
 }
+
+.app__footer-form{
+  width: 60%;
+  flex-direction: column;
+  margin: 1rem 2rem;
+
+  div{
+    width: 100%;
+
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+
+    transition: all 0.3s ease-in-out;
+  }
+}
